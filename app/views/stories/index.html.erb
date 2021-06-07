@@ -11,7 +11,7 @@
   <% @stories.reverse.each do |story| %>
     <div class="col-sm-6 col-md-4">
       <div class="thumbnail">
-        <%= link_to(image_tag(story.picture), story) if story.picture? %>
+      
         <div class="caption">
           <h3><%= story.title %></h3>
           <small><%= time_ago_in_words(story.created_at) %> ago</small>
