@@ -1,4 +1,5 @@
 class User < ApplicationRecord
     has_secure_password
-    validates :email, presence: true, uniqness
+    has_many :stories
+    validates :email, presence: true, uniqueness: {case_sensitive: false} 
 end
